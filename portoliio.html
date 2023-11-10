@@ -5,12 +5,26 @@
     <title>Khomotso's portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        .image {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .image {
+                display: none;
+            }
+        }
+
+    </style>
 </head>
 
-<body class="bg-gray-100 p-4">
-    <div class="container  bg-black ">
+<body class="bg-gray-100">
+    <div class="bg-black w-[100%]">
         <div class="flex flex-col md:flex-row bg-black ">
-            <img src="/images/ales-nesetril-Im7lZjxeLhg-unsplash (1).jpg" alt="" class="w-full  h-auto ">
+            <div class="w-full image">
+                <img src="/images/ales-nesetril-Im7lZjxeLhg-unsplash (1).jpg" alt="" class="w-full  h-auto ">
+            </div>
             <div class="">
                 <img src="/images/Motso.JPG" alt="" class=" h-80  mt-12 rounded-lg md:w-full" style="width:850px;">
                 <div class="w-full  bg-cover bg-center  bg-black text-white mt-6">
